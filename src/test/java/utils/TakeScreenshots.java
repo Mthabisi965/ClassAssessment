@@ -4,12 +4,11 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import tests.Base;
 
 import java.io.File;
 import java.io.IOException;
 
-public class TakeScreenshots extends Base {
+public class TakeScreenshots {
     private static final String screenshotPath = "src/test/resources/screenshots/";
     public void takeSnapShot(WebDriver driver, String screenshotName) {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
